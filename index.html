@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>X-table</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="x-table.min.css" />
+  </head>
+  <body>
+    <div class="table"></div>
+
+    <script src="x-table.min.js"></script>
+    <script>
+      const table = document.querySelector(".table");
+      new Xtable({
+        el: table,
+        headers: [
+          "Name",
+          { text: "Email", sortable: true },
+          "Phone",
+          { text: "Company", sortable: true },
+          { text: "Country", sortable: true },
+        ],
+        items: [
+          [
+            "Emery Charles",
+            "arcu.imperdiet@semsempererat.org",
+            "1-461-205-5141",
+            "Eu Corp.",
+            "Australia",
+          ],
+          [
+            "Raymond Lindsay",
+            "ornare.fusce@enim.org",
+            "1-335-875-6617",
+            "Tincidunt Tempus Inc.",
+            "Peru",
+          ],
+          [
+            "Ifeoma Nixon",
+            "quam.dignissim@sitamet.org",
+            "1-860-379-3277",
+            "Fusce Mi Institute",
+            "Peru",
+          ],
+          [
+            "Hop Finley",
+            "a.neque@eu.co.uk",
+            "1-691-385-7165",
+            "Aenean LLP",
+            "United Kingdom",
+          ],
+          [
+            "Odessa Gill",
+            "ante.dictum@ornareelit.ca",
+            '"1-156-870-8077',
+            "Quis Accumsan Convallis Institute",
+            "Canada",
+          ],
+          [
+            "Sacha Gonzalez",
+            "aenean.massa@laoreetlectus.net",
+            "(921) 284-4583",
+            "Turpis Aliquam Incorporated",
+            "Austria",
+          ],
+          [
+            "Hu Gonzalez",
+            "mauris.a.nunc@adipiscingenim.edu",
+            "1-233-675-3248",
+            "Amet PC",
+            "Belgium",
+          ],
+          [
+            "Vaughan Mcclure",
+            "est.mauris.eu@dignissimmaecenas.edu",
+            "1-898-717-3088",
+            "Ac Limited",
+            "Netherlands",
+          ],
+          [
+            "Marcia Rojas",
+            "nunc@sedconsequat.ca",
+            "(231) 554-5478",
+            "Aliquet Libero Integer LLC",
+            "Pakistan",
+          ],
+          [
+            "Hasad Joyce",
+            "vitae.odio@amifringilla.org",
+            "1-723-201-2156",
+            "Nunc Pulvinar Ltd",
+            "Russian Federation",
+          ],
+          [
+            "Derek Larson",
+            "semper.dui@vitaeposuere.com",
+            "1-604-356-7645",
+            "Nisi Foundation",
+            "Italy",
+          ],
+          [
+            "Bree Benjamin",
+            "non.magna.nam@proinsedturpis.co.uk",
+            "(471) 441-6570",
+            "Orci Institute",
+            "Austria",
+          ],
+          [
+            "Duncan Burt",
+            "aenean@nullatincidunt.edu",
+            "1-448-261-6258",
+            "Imperdiet LLP",
+            "Ireland",
+          ],
+          [
+            "Beverly Barr",
+            "egestas.lacinia@lobortisauguescelerisque.ca",
+            "(735) 544-0750",
+            "Id Ante PC",
+            "Vietnam",
+          ],
+          [
+            "Irene Joseph",
+            "mauris.a@donectempus.com",
+            "(936) 927-1226",
+            "Sociis Corp.",
+            "Chile",
+          ],
+          [
+            "Raja Herman",
+            "sed.libero@rhoncus.net",
+            "(464) 633-8891",
+            "Porttitor Vulputate Posuere Industries",
+            "Chile",
+          ],
+          [
+            "Mia Holland",
+            "iaculis.enim.sit@est.ca",
+            "(537) 275-6293",
+            "Donec Sollicitudin Adipiscing Associates",
+            "Netherlands",
+          ],
+          [
+            "Abra Finch",
+            "habitant.morbi@morbisit.edu",
+            "1-510-285-6182",
+            "Ac Mi Company",
+            "Peru",
+          ],
+          [
+            "Ignacia Conner",
+            "et.magnis.dis@namacnulla.org",
+            "1-618-622-9170",
+            "Sed Nulla Ante Corporation",
+            "New Zealand",
+          ],
+          [
+            "Grace Young",
+            "erat.vivamus.nisi@laoreetlibero.ca",
+            "(735) 576-3448",
+            "Et Malesuada Fames Inc.",
+            "Canada",
+          ],
+        ],
+      });
+    </script>
+  </body>
+</html>

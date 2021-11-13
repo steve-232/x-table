@@ -1,0 +1,158 @@
+.x-table {
+  color: #484848;
+}
+
+.x-table__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: arial, sans-serif;
+}
+
+.x-table__table td,
+.x-table__table th {
+  padding: 8px 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  transition: color 160ms linear;
+}
+
+.x-table__table th {
+  color: #444;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  user-select: none;
+}
+
+.x-table__table th:hover .x-table__sort-icon {
+  opacity: 1;
+}
+
+.x-table__table th.x-table--not-clickable:hover .x-table__sort-icon {
+  opacity: 0;
+}
+
+.x-table__table tr {
+  background-color: #fff;
+  transition: background-color 160ms linear;
+}
+
+.x-table__table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.x-table__table tr:hover {
+  color: #000;
+  background-color: #f3f3f3;
+}
+
+.x-table__table tr:hover:first-child {
+  background-color: #fff;
+}
+
+.x-table__sort-icon {
+  display: inline-block;
+  color: #999;
+  margin-left: 5px;
+  opacity: 0;
+  vertical-align: 1px;
+  transition: opacity 160ms linear;
+}
+
+.x-table__sort-icon--ascending {
+  transform: rotate(-90deg);
+}
+
+.x-table__sort-icon--descending {
+  transform: rotate(90deg);
+}
+
+.x-table__pagination {
+  display: flex;
+  margin: 16px auto 0;
+  padding: 0;
+  color: #777;
+  justify-content: center;
+  list-style: none;
+}
+
+.x-table__pagination-item {
+  margin: 0 4px;
+  padding: 5px 8px;
+  border: 1px solid #ddd;
+  transition: all 160ms linear 10ms;
+  user-select: none;
+}
+
+.x-table__pagination-item:hover {
+  cursor: pointer;
+  color: #484848;
+  background-color: #f9f9f9;
+}
+
+.x-table__pagination--active {
+  color: #484848;
+  background-color: #f9f9f9;
+  border-color: #bbb;
+}
+
+.x-table__search-form {
+  margin-bottom: 10px;
+}
+
+.x-table__search-form-input {
+  width: 250px;
+  height: 30px;
+  position: relative;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid #ddd;
+  z-index: 1;
+  transition: border 160ms linear 10ms, box-shadow 160ms linear 10ms;
+}
+
+.x-table__search-form-input:hover {
+  border-color: #bbb;
+}
+
+.x-table__search-form-input:focus {
+  border-color: #999;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.x-table__search-form-btn {
+  height: 30px;
+  margin-left: -1px;
+  padding: 0 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  transition: background-color 160ms linear 10ms;
+}
+
+.x-table__search-form-btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.x-table__search-form-result {
+  padding-left: 16px;
+  opacity: 0.3;
+  font-size: 14px;
+}
+
+.x-table--clickable:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.x-table--not-clickable:hover {
+  color: inherit;
+  cursor: default;
+}
+
+.x-table--hide {
+  opacity: 0;
+}
+
+.x-table--show {
+  opacity: 1;
+}
